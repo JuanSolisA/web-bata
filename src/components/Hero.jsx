@@ -1,5 +1,5 @@
 import React from "react";
-import { fondoHome } from "../assets";
+import { fondoHome1, fondoHome2, fondoHome3, fondoHome4 } from "../assets";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 const Hero = () => {
@@ -7,7 +7,7 @@ const Hero = () => {
     <>
       <div className="flex flex-col w-full bg-black overflow-hidden relative h-[600px] md:h-[800px]">
         <img
-          src={fondoHome}
+          src={fondoHome1}
           alt=""
           className="absolute inset-0 w-full h-full object-cover"
         />
@@ -19,9 +19,14 @@ const Hero = () => {
           <h4 className="font-poppins text-xl md:text-4xl text-white tracking-wider text-center">
             EXPLORADORES ARGENTINOS DE DON BOSCO
           </h4>
-          <button className="font-poppins bg-sky-900 absolute  md:right-10 bottom-10 w-60 md:w-96 h-20 font-bold text-2xl md:text-4xl text-white tracking-wide">
-            Contactanos <FontAwesomeIcon icon={faEnvelope} />
-          </button>
+          <a
+            href="#"
+            className="font-poppins bg-sky-900 absolute  md:right-10 bottom-10 w-60 md:w-96 h-20 font-bold text-2xl md:text-4xl text-white tracking-wide flex justify-center"
+          >
+            <div className="self-center ">
+              Inscribite <FontAwesomeIcon icon={faEnvelope} />
+            </div>
+          </a>
         </div>
       </div>
     </>
