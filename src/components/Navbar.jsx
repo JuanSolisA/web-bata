@@ -7,11 +7,11 @@ const Navbar = () => {
   const [toggle, setToggle] = useState(false);
 
   return (
-    <div className="w-full flex py-4 px-4 justify-between items-center navbar bg-black">
+    <div className="w-full flex py-2 px-3 justify-between items-center navbar bg-black fixed z-40 opacity-90">
       <a href="#">
         <div className="flex justify-between">
           <img src={logo} alt="" className="h-[30px] mr-2" />
-          <h1 className="font-poppins text-white font-bold">Batallón 2</h1>
+          <h1 className="font-poppins text-white font-bold place-self-center">Batallón 2</h1>
         </div>
       </a>
       <div>
